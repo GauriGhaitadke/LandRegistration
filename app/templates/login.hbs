@@ -1,0 +1,25 @@
+{{!-- This is second page(2) for login  --}}
+
+<html>
+<body>
+
+<form class="form-horizontal">  
+ <div class="form-group">
+{{!-- UserName:<br>{{input valueBinding = "UserName" type = "text"}}<br/> --}}
+
+Email-id:<br>{{input  valueBinding = "email" type="text"}}<br>
+Password:<br>{{input  valueBinding = "Password" type="text"}}<br/>
+</div>
+
+{{!-- <div id="submit">
+<button ><a href="gov-reg">Submit</a></button>
+</div> --}}
+<div id="submit">
+<button {{ action 'submitAction'}}>Submit</button>
+</div>
+</form>
+
+</body>
+
+</html>
+{{outlet}}

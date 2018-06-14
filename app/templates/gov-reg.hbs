@@ -1,0 +1,71 @@
+{{!-- This page for registration page(1) of govt user   --}}
+
+
+{{!-- The UserName is {{UserName}}<br><br>
+The Password is {{Password}}<br><br>
+Email-Id is {{email}}<br><br> --}}
+ 
+{{!-- <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;"> <a href="firstproperty">Registre</a></button> --}}
+
+{{!-- 
+
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">First Property Registration</button>
+
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span> --}}
+  {{!-- <form class="modal-content" action="/action_page.php"> --}}
+    <form class="modal-content1">
+    <div class="container-6">
+     
+      <p>ENTER YOUR DETAILS</p>
+      <hr>
+  
+       <label for="Username" ><b>UserName</b></label>
+      {{input valueBinding= "UserName" type="text"name="UserName" }}
+      {{!-- Password:<br><br>{{input  valueBinding = "Password" type="text"}}<br/><br/> --}}
+{{!-- Email-id:<br><br>{{input  valueBinding = "email" type="text"}}<br/><br/> --}}
+
+      <label for="email"><b>Email</b></label>
+      {{input valueBinding= "email" type="text" name="email" }}
+
+      <label for="state"><b>State Name</b></label>
+      {{input valueBinding= "state" type="text" name="state" }}
+
+       <label for="District"><b>District Name</b></label>
+      {{input  valueBinding= "District" type="text"name="district" }}
+      
+      <label for="psw"><b>Password</b></label>
+      {{input valueBinding= "Password" type="password"  name="psw" }}
+
+      <label for="Rpassword"><b>Repeat Password</b></label>
+      {{input valueBinding= "Rpassword" type="password" name="Rpassword" }}
+ 
+      {{!-- <label>
+        {{input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label}}  --}}
+
+      {{!-- <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p> --}}
+
+      {{!-- <div class="clearfix"> --}}
+        {{!-- <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button> --}}
+        {{!-- <button type="submit" class="signupbtn" id="submitbtn">Submit</button> --}}
+<button {{ action 'submitAction'}} id="submitbtn">Submit</button>
+      </div>
+    {{!-- </div> --}}
+  </form>
+
+{{!-- 
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script> --}}
+
+
+{{outlet}}

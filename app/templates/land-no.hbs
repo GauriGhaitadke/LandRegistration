@@ -1,0 +1,42 @@
+{{!-- <html>
+    <body>
+    {{!-- <h1>Land Registration Number</h1> --}}
+    {{!-- <lable for="Number"><b>Land Registration Number:</b></lable>
+    {{input valueBindingtype="number" name="number" }}<br><br> --}}
+    {{!-- <lable for="name"><b>Name</b></lable>
+    {{input valueBinding name="name"}}
+
+    </body>
+</html> --}} 
+{{!-- The UserName is {{UserName}}<br><br>
+
+Email-Id is {{email}}<br><br>
+{{outlet}} --}}
+
+
+{{!-- this is the fourth page(4) for land no --}}
+<form class="modal-content1">
+    <div class="container-5">
+     
+      <h1>Current Owner Details </h1>
+      <hr>
+      <lable id="lable">Land Registration Number:</lable><br><br><br>
+      <label for="name"><b>UserName:</b></label>
+     {{UserName}} <br><br><br>
+
+      <label for="email"><b>Email:</b></label>
+    {{email}}<br><br><br>
+       <label for="Number"><b>Phone No:</b></label><br><br><br>
+     <label for="land deatils"><b>Land Details:</b></label><br><br><br>
+          <label for="place"><b>Location:</b></label><br><br><br>
+      {{!-- <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p> --}}
+
+        {{!-- <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button> --}}
+       
+  
+    </div>
+  </form>
+
+
+
+{{outlet}}
